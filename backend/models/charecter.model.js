@@ -12,6 +12,7 @@ const CharecterSchema = mongoose.Schema({
      Power :{
         type: Number,
         required: true,
+        description: "Overall strength level, impacts combat and quest success."
     },
      Stamina : {
         type :  Number ,
@@ -80,3 +81,5 @@ const CharecterSchema = mongoose.Schema({
     }
 
 })
+
+module.exports = mongoose.model('User', userSchema);
